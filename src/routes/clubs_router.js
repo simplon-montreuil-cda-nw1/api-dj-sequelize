@@ -1,6 +1,6 @@
 const express = require("express");
 
-const { OK } = require("../helpers/status_codes");
+const { OK, CREATED } = require("../helpers/status_codes");
 const {
   getAllClubs,
   getClub,

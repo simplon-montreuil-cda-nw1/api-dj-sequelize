@@ -1,9 +1,13 @@
-// const { Musicalgenre } = require("../models");
+const { Musicalgenre } = require("../models");
 
 const musicalGenresController = {
   getAllMusicalGenres: async () => {
-    // Your code here
-    return {};
+    const musicalGenres = await Musicalgenre.findAll({
+      order: [["name", "ASC"]],
+      attributes: ["name"],
+      raw: true,
+    });
+    return musicalGenres;
   },
 };
 
