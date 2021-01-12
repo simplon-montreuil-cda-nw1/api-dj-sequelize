@@ -14,6 +14,7 @@ module.exports = {
           model: "Djs",
           key: "id",
         },
+        onDelete: "CASCADE",
       },
       musicalgenre_id: {
         allowNull: false,
@@ -22,6 +23,7 @@ module.exports = {
           model: "Musicalgenres",
           key: "id",
         },
+        onDelete: "CASCADE",
       },
       createdAt: {
         allowNull: false,
